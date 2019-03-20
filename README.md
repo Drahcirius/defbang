@@ -38,10 +38,10 @@ iex> Foo.is_positive(1)
 iex> Foo.is_positive(-1)
 {:error, %RuntimeError{message: "This is not a positive number"}
 
-iex> Foo.check_sign!(0)
+iex> Foo.is_negative!(0)
 "This is a positive number"
 
-iex> Foo.check_sign!(-1)
+iex> Foo.is_negative!(-1)
 ** (RuntimeError) "This is not a positive number"
 ```
 
